@@ -1,7 +1,17 @@
 import java.io.FileReader
 
 fun main() {
-    readFromFile()
+    println("OBJECTIONS TRAINER")
+    println("===========================")
+    println("1) Receive an Objection")
+
+    var op = readLine()!!.toInt()
+
+    when(op) {
+        1 -> {
+            readFromFile()
+        }
+    }
 }
 
 fun readFromFile() {
