@@ -7,7 +7,7 @@ fun main() {
 fun readFromFile() {
 
     try {
-        var fin=FileReader("C:\\Users\\aswai\\Documents\\GitHub\\Objections Trainer\\src\\objections.txt")
+        var fin=FileReader("src\\objections.txt")
         var c : Int?
         do {
             c = fin.read()
