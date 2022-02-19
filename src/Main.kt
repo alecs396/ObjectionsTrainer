@@ -14,7 +14,7 @@ fun main() {
         1 -> {
             getObjection()
         } 2 -> {
-            print("Enter Custom Objection:")
+            print("Enter Custom Objection: ")
             var  str:String = readLine().toString()
             writeObjection(str)
         }
@@ -26,7 +26,8 @@ fun writeObjection(str:String) {
         var fo = FileWriter("src\\objections.txt", true)
         fo.write(str + "\n")
         fo.close()
-    }catch (ex:Exception) {
+        main()
+    } catch (ex:Exception) {
         print(ex.message)
     }
 }
